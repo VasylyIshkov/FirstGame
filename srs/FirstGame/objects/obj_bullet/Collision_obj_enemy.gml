@@ -3,4 +3,5 @@
 with(other){
 hp = hp-1;	
 }
+//Уничтожает обьект
 instance_destroy();
