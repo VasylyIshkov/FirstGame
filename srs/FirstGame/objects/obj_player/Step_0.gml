@@ -1,6 +1,26 @@
 //Moving
 //keyboard_check Возвращает, удерживается ли данная клавиша на клавиатуре в данный момент.
-if(keyboard_check(vk_right) or keyboard_check(ord("D"))){
+if((keyboard_check(vk_up)or keyboard_check(ord("W")))and
+(keyboard_check(vk_right) or keyboard_check(ord("D")))){
+x = x+2;
+y = y-2;
+}
+else if((keyboard_check(vk_up)or keyboard_check(ord("W")))and
+(keyboard_check(vk_left) or keyboard_check(ord("A")))){
+x = x-2;
+y = y-2;
+}
+else if((keyboard_check(vk_down)or keyboard_check(ord("S")))and
+(keyboard_check(vk_left) or keyboard_check(ord("A")))){
+x = x-2;
+y = y+2;
+}
+else if((keyboard_check(vk_down)or keyboard_check(ord("S")))and
+(keyboard_check(vk_right) or keyboard_check(ord("D")))){
+x = x+2;
+y = y+2;
+}
+else if(keyboard_check(vk_right) or keyboard_check(ord("D"))){
 x = x+4;
 }
 else if(keyboard_check(vk_left)or keyboard_check(ord("A"))){
